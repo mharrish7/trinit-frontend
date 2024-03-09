@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MapContainer } from "react-leaflet";
 import ReactLeafletGoogleLayer from "react-leaflet-google-layer";
+import { useScreenshot } from 'use-react-screenshot'
 
 const SimpleMap = () => {
   const [markerPosition, setMarkerPosition] = useState([51.505, -0.09]);
