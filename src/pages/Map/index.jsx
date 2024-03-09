@@ -21,10 +21,10 @@ const SimpleMap = () => {
       zoom={zoom}
       onZoomend={handleZoomChange}
       onClick={handleMapClick}
-      style={{ height: "500px", width: "100%" }}
+      style={{ height: "50rem", width: "50rem" }}
     >
       <ReactLeafletGoogleLayer
-        googleMapsLoaderConf={{ KEY: googleMapsAPIKey }}
+      apiKey={googleMapsAPIKey}
         type={"satellite"}
       />
     </MapContainer>
