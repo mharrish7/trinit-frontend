@@ -44,16 +44,16 @@ function FileUpload() {
 
   return (
     <>
-      <div >
+      <div id="div" style={{backgroundColor:"grey",opacity:"0.95", padding:"5%", borderRadius:"25px", Width:"250px" }}>
         <div style={{ height: '20%' }}>
-        <Dropzone openRef={openRef} onDrop={handleDrop} activateOnClick={false}>
+        <Dropzone style={{opacity:"1"}} openRef={openRef} onDrop={handleDrop} activateOnClick={false}>
           <img src={icon} />
           <br></br>
           <h3>Upload or drop your files here</h3>
         </Dropzone>
 
         <Group justify="center" mt="md">
-          <Button onClick={() => openRef.current?.()} style={{ pointerEvents: 'all' }}>
+          <Button onClick={() => openRef.current?.()} style={{ opacity:"1", pointerEvents: 'all' , borderRadius:"25px"}}>
             Select files
           </Button>
         </Group>
@@ -61,7 +61,7 @@ function FileUpload() {
       <br></br>
       <br></br>
       <div style={{ height: '80%' ,display:"flex"}}>
-        <div id="img" style={{float:'left' ,width:"50%"}}>
+        <div id="img" style={{float:'left' ,width:"50%",opacity:"1"}}>
           {
             
             <><img src={base64img}  style={{ maxWidth: '100%', maxHeight: '100%' }} /></>
@@ -70,7 +70,7 @@ function FileUpload() {
           
         </div>
         <div id="textbox" style={{float:'right' ,width:"50%"}}>
-            <h4>This is an aeroplane hangar near a lake</h4>
+            <h4 style={{opacity:"1.5"}}>This is an aeroplane hangar near a lake</h4>
 
         </div>
       </div>
