@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "google-maps": "^4.3.3",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.6",
+    "react-google-maps": "^9.4.5",
     "react-leaflet": "^4.2.1",
+    "react-leaflet-google": "^4.0.0",
+    "react-leaflet-google-layer": "^2.2.0",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
