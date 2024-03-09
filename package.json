@@ -27,6 +27,7 @@
     "react-leaflet-google": "^4.0.0",
     "react-leaflet-google-layer": "^2.2.0",
     "react-router-dom": "^6.22.3",
+    "styled-components": "^6.1.8",
     "use-react-screenshot": "^4.0.0",
     "use-screenshot": "^0.1.1"
   },

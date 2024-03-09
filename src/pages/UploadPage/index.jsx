@@ -55,8 +55,12 @@ function FileUpload() {
       </div>
       <div style={{ height: '80%' }}>
         <div id="img">
-          {/* Display the base64img here */}
-          <img src={base64img} alt="Uploaded File" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+          {
+            
+            <><img src={base64img}  style={{ maxWidth: '100%', maxHeight: '100%' }} /></>
+            
+          }
+          
         </div>
         <div id="textbox"></div>
       </div>
