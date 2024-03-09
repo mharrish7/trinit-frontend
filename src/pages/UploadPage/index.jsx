@@ -6,23 +6,39 @@ function FileUpload() {
   const openRef = useRef(null);
   const [base64img, setBase64IMG] = useState();
 
+
   const handleDrop = (files) => {
-    // Access and process the dropped files here
-    console.log(typeof files);
+  // Access and process the dropped files here
+  console.log(typeof files);
 
-    files.forEach((file) => {
-      const reader = new FileReader();
+  files.forEach((file) => {
+    const reader = new FileReader();
 
-      reader.readAsDataURL(file);
+    reader.readAsDataURL(file);
 
-      reader.onload = () => {
-        console.log('called: ', reader);
-        setBase64IMG(reader.result);
-      };
-    });
+    reader.onload = () => {
+      console.log('called: ', reader);
+      setBase64IMG(reader.result);
 
-    // Note: You might want to perform additional operations after reading the files.
-  };
+      // Perform the fetch POST request after reading the file
+      fetch('/upload', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ image: reader.result }),
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    };
+  });
+
+  // Note: You might want to perform additional operations after reading the files.
+};  
+
 
   return (
     <>
