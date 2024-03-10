@@ -11,6 +11,13 @@ import '@mantine/dropzone/styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <MantineProvider>
-      <App />
+    <div className="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+
+      </div>
+      <App/>
     </MantineProvider>
 )

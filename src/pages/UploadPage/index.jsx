@@ -44,8 +44,8 @@ function FileUpload() {
 
   return (
     <>
-      <div id="div" style={{backgroundColor:"grey",opacity:"0.95", padding:"5%", borderRadius:"25px", Width:"250px" }}>
-        <div style={{ height: '20%' }}>
+      <div id="div" style={{backgroundColor:"grey",opacity:"0.95", padding:"5%", borderRadius:"25px",width:"max-content",border: '2px solid rgba(0, 0, 0, 0.1)'}}>
+        <div style={{ height: '20%',width:"750px", marginRight:"5%" ,border: '1px solid rgba(0, 0, 0, 0.05)'}}>
         <Dropzone style={{opacity:"1"}} openRef={openRef} onDrop={handleDrop} activateOnClick={false}>
           <img src={icon} />
           <br></br>
@@ -61,7 +61,7 @@ function FileUpload() {
       <br></br>
       <br></br>
       <div style={{ height: '80%' ,display:"flex"}}>
-        <div id="img" style={{float:'left' ,width:"50%",opacity:"1"}}>
+        <div id="img" style={{float:'left' ,width:"50%" ,height:"200px",border: '1px solid rgba(0, 0, 0, 0.05)'}}>
           {
             
             <><img src={base64img}  style={{ maxWidth: '100%', maxHeight: '100%' }} /></>
@@ -70,7 +70,7 @@ function FileUpload() {
           
         </div>
         <div id="textbox" style={{float:'right' ,width:"50%"}}>
-            <h4 style={{opacity:"1.5"}}>This is an aeroplane hangar near a lake</h4>
+            <h4 >"asdddddjad adhhhkdkak kdkahdkhad"</h4>
 
         </div>
       </div>
